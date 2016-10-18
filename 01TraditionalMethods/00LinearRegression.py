@@ -3,9 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Parameters
-learning_rate = 0.01
+learning_rate = 0.0005
 num_training_epoch = 1000
-display_step = 100
+display_step = 50
 
 train_batch_size = 50
 
@@ -21,7 +21,7 @@ b =  3.14159
 print('Real W={}, b={}'.format(W, b))
 
 # Generate X data in range(-10,10) in num_data size
-X = np.linspace(-1, 1, num_data).reshape(-1, 1)
+X = np.linspace(-10, 10, num_data).reshape(-1, 1)
 print('X shape:', X.shape)
 mu, sigma = 0, 0.3
 Y_noise = np.random.normal(mu, sigma, num_data).reshape(-1, 1)
